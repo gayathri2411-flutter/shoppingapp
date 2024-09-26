@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:groceryapp/firstscreen.dart'; // Ensure this imports the correct screen
+import 'package:groceryapp/screens/firstscreen.dart';
+ // Ensure this imports the correct screen
 
 void main() {
   runApp(const MyApp()); // Use const for performance
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Splash(),
       ),
@@ -40,20 +42,22 @@ class _SplashState extends State<Splash> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              "assets/splash_screen.jpeg",
-              height: 100,
-              width: 200,
-            ),
-          ],
+    return
+       Scaffold(
+        body: Center(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                "assets/splash_screen.jpeg",
+                height: 300,
+                width: 300,
+              ),
+            ],
+          ),
         ),
-      ),
+
     );
   }
 }
