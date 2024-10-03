@@ -16,7 +16,7 @@ final TextEditingController _confirm =TextEditingController();
     return Scaffold(
       body: Padding(
           padding: const EdgeInsets.symmetric(
-              vertical: 100.4,horizontal: 20.5
+              vertical: 50.4,horizontal: 20.5
           ),
           child: SingleChildScrollView(
             child: Column(
@@ -78,7 +78,7 @@ final TextEditingController _confirm =TextEditingController();
                       } ,
                       child: Text("By Clicking the Register button ,you agree \n to the pubic offers")),
                 ),
-                SizedBox(height: 50,),
+                SizedBox(height: 30,),
                 Center(
                   child: SizedBox(
                     height: 55,

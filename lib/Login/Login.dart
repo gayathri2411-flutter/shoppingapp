@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:groceryapp/Login/create_account.dart';
 import 'package:groceryapp/screens/welcome.dart';
@@ -48,7 +46,7 @@ class _LoginState extends State<Login> {
                                borderRadius: BorderRadius.circular(10.2)
                          ),
                          prefixIcon: Icon(Icons.person),
-                         labelText:"emailId"
+                         hintText:"emailId"
                        ),
                      ),SizedBox(height: 25,),
                      TextFormField(
@@ -60,7 +58,7 @@ class _LoginState extends State<Login> {
                                borderRadius: BorderRadius.circular(10.2)),
                            prefixIcon: Icon(Icons.lock),
                            suffixIcon: Icon(Icons.remove_red_eye),
-                           labelText:"emailId"
+                           hintText:"Password"
                        ),
                      ),SizedBox(height: 10,),
                      Align(
